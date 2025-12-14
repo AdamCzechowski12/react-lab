@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState} from "react";
-
+import "milligram";
 function App() 
 {
   const [title, setTitle] = useState('Wall-E');
@@ -31,13 +31,11 @@ const movies = [
 ];
     return (
       
-        <div >
+        <div className="container">
             <h1>My favourite movies to watch</h1>
             <h1>Titles</h1>
              <ul>
- 
     {movies.map((movie) => <li key={movie.title}>{movie.title}</li>)}
-
 </ul>
 
             <h2>My favourite movie for today is {title}</h2>
